@@ -484,10 +484,16 @@ footer .fname { color: var(--white); font-weight: 700; }
   .grid.cols-3 { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }
   .process-steps { grid-template-columns: 1fr; }
-  .contact .wrap { grid-template-columns: 1fr; }
+  .contact .wrap { grid-template-columns: minmax(0, 1fr); }
   .nav-links { display: none; }
 }
 @media (max-width: 560px) {
+  .wrap { padding: 0 20px; }
+  .contact-card { padding: 18px; }
+  .contact-card .row { gap: 10px; font-size: 14px; overflow-wrap: break-word; }
+  .contact-card .row > :not(.ico) { min-width: 0; }
+  .contact-card .row:nth-child(2) { flex-wrap: wrap; }
+  .contact-card .socials { margin-left: 44px; }
   .reels { gap: 10px; }
   .reel { border-radius: 18px; box-shadow: 4px 4px 0 var(--black); border-width: 2px; }
   .price-row { flex-direction: column; gap: 6px; }
