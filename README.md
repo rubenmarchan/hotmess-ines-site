@@ -11,7 +11,8 @@ slide-scroll layout.
 
 - `index.html` — all page markup/content
 - `styles.css` — theme (black / white / yellow), layout, responsive rules
-- `images/` — portfolio photos
+- `images/` — portfolio photos and headshot
+- `videos/` — the four portfolio videos from the original Canva site (compressed)
 
 ## Local preview
 
